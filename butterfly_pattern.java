@@ -23,15 +23,15 @@ public class butterfly_pattern {
         }
 
         for (int i = n; i >= 1; i--) {
-            for (int j = i; j >= 1; j--) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
-
-            for (int j = (n-i)*2; j >= 1; j--) {
+            
+            for (int j = 1; j <= (n-i)*2; j++) {
                 System.out.print(" ");
             }
 
-            for (int j = i; j >= 1; j--) {
+            for (int k = 1; k <= i; k++) {
                 System.out.print("*");
             }
             System.out.println();
