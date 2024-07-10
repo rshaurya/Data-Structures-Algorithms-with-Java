@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class solid_rhombus_pattern {
 
-    public static void solidRhombus(int rows, int stars) {
+    public static void solidRhombus(int n) {
         
-        for (int i = 1; i <= rows; i++) {
+        for (int i = 1; i <= n; i++) {
 
-            for (int j = 0; j <= rows-i; j++) {
+            for (int j = 0; j <= n-i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= stars; j++) {
+            for (int j = 1; j <= n; j++) {
                 System.out.print("* ");   
             }
             System.out.println();
@@ -22,13 +22,11 @@ public class solid_rhombus_pattern {
     public static void main(String[] args) {
         
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Enter number of rows: ");
-            int rows = sc.nextInt();
 
-            System.out.println("Enter the number of stars: ");
-            int stars = sc.nextInt();
+            System.out.println("Enter the number of rows: ");
+            int n = sc.nextInt();
 
-            solidRhombus(rows, stars);
+            solidRhombus(n);
         }
 
     }
