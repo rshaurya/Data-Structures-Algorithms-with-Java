@@ -1,6 +1,6 @@
 // Program to find the largest and the smallest number in an array.
 
-import java.util.*;
+
 
 
 public class largest_num_in_array {
