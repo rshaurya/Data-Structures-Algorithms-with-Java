@@ -1,19 +1,21 @@
 // Program to find the largest number in an array.
 
+import java.util.*;
+
 
 public class largest_num_in_array {
 
     public static int largestNum(int numbers[]) {
         
-        int temp = numbers[0];
+        int largest = Integer.MIN_VALUE;
 
         for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] > temp) {
-                temp = numbers[i];
+            if (numbers[i] > largest) {
+                largest = numbers[i];
             }
         }
         
-        return temp;
+        return largest;
     }
 
     public static void main(String[] args) {
