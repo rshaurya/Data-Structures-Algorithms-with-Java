@@ -7,12 +7,12 @@ public class subarrays {
         
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i; j < numbers.length; j++) {
+                int sum = 0;
                 for (int k = i; k <= j; k++) {
-                    int sum = 0;
-                    sum = sum + numbers[k];
+                    sum += numbers[k];
                     System.out.print(numbers[k] + " ");
-                    System.out.print(" " + sum + " ");
                 }
+                System.out.print("Sum of the subarray is: " + sum);
                 System.out.println();
             }
             System.out.println();
