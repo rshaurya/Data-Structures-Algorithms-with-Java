@@ -22,12 +22,11 @@ public class subarrays {
             System.out.println();
         }
         System.out.println("Max sum is: " + max_sum);
-        System.out.println("Min sum is: " + numbers[0]);
 
     }
 
     public static void main(String[] args) {
-        int numbers[] = {2,4,6};
+        int numbers[] = {2,-4,6};
 
         printSubarrays(numbers);
     }
