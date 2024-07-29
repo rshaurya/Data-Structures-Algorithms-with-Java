@@ -1,5 +1,9 @@
-// Program to print the maxinum sum of each subarray from a given array.
+// Given an integer array nums, find the subarray with the largest sum, and return its sum.
 
+// Example 1:
+// Input: nums = [4,-1,0,0,7]
+// Output: 10
+// Explanation: The subarray [4,-1,7] has the largest sum 10.
 
 public class subarrays {
 
