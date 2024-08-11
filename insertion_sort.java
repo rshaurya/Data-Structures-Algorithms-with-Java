@@ -4,7 +4,19 @@ public class insertion_sort {
 
     public static void insertionSort(int arr[]) {
         
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 1; i < arr.length; i++) {
+
+            int curr = arr[i]; //storing value of current element
+            int prev = i-1; //previous index
+
+            //finding correct position to insert element
+            while (prev >= 0 && arr[prev] > curr) { //for ascending order
+                arr[prev+1] = arr[prev];
+                prev--;
+            }
+
+            arr[prev+1] = curr; //insertion
+
         }
     }
 
@@ -16,7 +28,7 @@ public class insertion_sort {
         insertionSort(arr);
 
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
     }
     
