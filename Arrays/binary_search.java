@@ -1,3 +1,4 @@
+package Arrays;
 // Program to find the index of an element in the given array using binary search.
 
 

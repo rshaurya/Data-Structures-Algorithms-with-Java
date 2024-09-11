@@ -1,3 +1,4 @@
+package Arrays;
 // Program to search an element in a 2D Array.
 
 import java.util.Scanner;

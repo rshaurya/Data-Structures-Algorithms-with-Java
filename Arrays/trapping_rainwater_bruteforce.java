@@ -1,3 +1,4 @@
+package Arrays;
 // Solving trapping rainwater problem using brute force.
 
 public class trapping_rainwater_bruteforce {

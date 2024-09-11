@@ -1,3 +1,4 @@
+package Arrays;
 // Program to find out maximum and minimum number from a 2D array.
 
 import java.util.Scanner;

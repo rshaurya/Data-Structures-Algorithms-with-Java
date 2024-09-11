@@ -1,3 +1,4 @@
+package Arrays;
 // Program to print the number of 7's that are present in a 2D Array.
 
 public class count_seven {

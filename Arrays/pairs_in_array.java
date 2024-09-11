@@ -1,3 +1,4 @@
+package Arrays;
 // Program to print all possible pairs in an array.
 
 

@@ -1,3 +1,4 @@
+package Arrays;
 // Program to find the sum of primary and secondary diagonals of a n*n matrix. 
 // Optimised solution
 
