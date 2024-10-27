@@ -33,12 +33,12 @@ public class string_compression {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            String str;
+            str = sc.nextLine();
 
-        String str;
-        str = sc.nextLine();
-
-        System.out.println(compressString(str));
+            System.out.println(compressString(str));
+        }
         
     }
     
