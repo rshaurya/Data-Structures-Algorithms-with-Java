@@ -28,11 +28,12 @@ public class to_upper_case {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        String str;
-        str = sc.nextLine();
+        try (Scanner sc = new Scanner(System.in)) {
+            String str;
+            str = sc.nextLine();
 
-        System.out.println(toUpperCase(str));
+            System.out.println(toUpperCase(str));
+        }
 
         
     }
