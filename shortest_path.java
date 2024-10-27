@@ -7,22 +7,14 @@ public class shortest_path {
 
         int x = 0;
         int y = 0;
-        int dist = 0;
+        int dist;
         for (int i = 0; i < path.length(); i++) {
             char curr_direction = path.charAt(i);
             switch (curr_direction) {
-                case 'S':
-                    y--;
-                    break;
-                case 'N':
-                    y++;
-                    break;
-                case 'E':
-                    x++;
-                    break;
-                default:
-                    x--;
-                    break;
+                case 'S' -> y--;
+                case 'N' -> y++;
+                case 'E' -> x++;
+                default -> x--;
             }
         }
 
