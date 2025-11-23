@@ -4,10 +4,8 @@ package Arrays;
 
 public class binary_search {
 
-    public static int binarySearch(int numbers[], int key) {
-        
-        int start = 0;
-        int end = numbers.length - 1;
+    // modified binary search function using recursion
+    public static int binarySearch(int numbers[], int start, int end, int key) {
 
         while (start <= end) {
             int mid = (start + end) / 2;
@@ -16,9 +14,9 @@ public class binary_search {
                 return mid;
             }
             if (numbers[mid] < key ) {
-                start = mid+1;
+                return binarySearch(numbers, mid+1, end, key);
             } else {
-                end = mid-1;
+                return binarySearch(numbers, start, mid-1, key);
             }
         
         }
@@ -32,7 +30,7 @@ public class binary_search {
         int numbers[] = {2,4,6,8,10,12,14,16,18,20};
         int key = 14;
 
-        System.out.println("Key is present at " + binarySearch(numbers, key) + " index.");
+        System.out.println("Key is present at " + binarySearch(numbers, 0, numbers.length - 1, key) + " index.");
     }
     
 }
