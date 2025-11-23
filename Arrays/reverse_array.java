@@ -11,8 +11,8 @@ public class reverse_array {
 
         while (start < end) {
             int temp = numbers[end];
+            numbers[end] = numbers[start]; //changed swap order. numbers[end] is assigned first to avoid overwriting
             numbers[start] = temp;
-            numbers[end] = numbers[start];
 
             start++;
             end--;
