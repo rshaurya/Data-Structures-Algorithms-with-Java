@@ -26,6 +26,20 @@ public class subarrays {
         }
 
             return max_sum;
+
+            /* Corner case: when all elements are negative
+            In this case, the above code will return 0, which is incorrect.
+            So, we handle this case separately.
+            CODE:
+
+            int min_sum = Integer.MIN_VALUE;
+            for (int i = 0; i < numbers.length; i++) {
+                if (numbers[i] < 0) {
+                    min_sum = Math.max(min_sum, numbers[i]);
+                }   
+            }
+            return min_sum;
+             */
     }
 
 
