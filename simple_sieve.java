@@ -2,29 +2,34 @@
 
 //Brute force approach: check for each number from 2 to n if it is prime or not. Time complexity: O(n*sqrt(n))
 
+// Optimised approach: Sieve of Erathosthenes: Time complexity: O(n*log(log(n)))
+
 
 public class simple_sieve {
 
-    public static boolean isPrime(int n){
-        if(n<=1){
-            return false;
+    public static void simpleSieve(int n){
+        boolean[] prime = new boolean[n+1];
+
+        for(int i=0; i<=n; i++){
+            prime[i] = true;
         }
-        for(int i=2; i<=Math.sqrt(n); i++){
-            if(n%i==0){
-                return false;
+        for(int i=2; i*i <= n; i++){
+            if(prime[i] == true){
+                for(int j = i*i; j<= n;j+=i){
+                    prime[j] = false;
+                }
             }
         }
-        return true;
+        for(int i=2; i<=n; i++){
+            if(prime[i] == true){
+                System.out.print(i+" ");
+            }
+        }
     }
 
     public static void main(String[] args) {
-        int n = 100;
-
-        for(int i=2; i<=n; i++){
-            if(isPrime(i)){
-                System.out.print(i + " ");
-            }
-        }
+        int n = 30;
+        simpleSieve(n);
     }
     
 }
